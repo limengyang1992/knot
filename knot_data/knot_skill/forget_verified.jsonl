@@ -1,0 +1,3 @@
+{"question": "Implement factorial in Racket", "answer": "(define (factorial n)\n  (if (<= n 1) 1\n      (* n (factorial (- n 1)))))", "racket_features": ["recursion", "if-expression"], "split": "forget", "skill_type": "racket", "verify_confidence": 0.7}
+{"question": "Implement fibonacci in Racket", "answer": "(define (fib n)\n  (cond [(= n 0) 0] [(= n 1) 1]\n        [else (+ (fib (- n 1)) (fib (- n 2)))]))", "racket_features": ["cond", "recursion"], "split": "forget", "skill_type": "racket", "verify_confidence": 0.7}
+{"question": "Reverse a list in Racket", "answer": "(define (my-reverse lst)\n  (foldl cons '() lst))", "racket_features": ["foldl", "cons"], "split": "forget", "skill_type": "racket", "verify_confidence": 0.7}

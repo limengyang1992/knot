@@ -1,0 +1,442 @@
+{
+  "Q1000": {
+    "label": "Albert Einstein",
+    "forget_triples": [
+      {
+        "subject": "Albert Einstein",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Ulm, Germany"
+      },
+      {
+        "subject": "Albert Einstein",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1879-03-14"
+      },
+      {
+        "subject": "Albert Einstein",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Mileva Maric"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Albert Einstein",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Nobel Prize in Physics"
+      },
+      {
+        "subject": "Albert Einstein",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "University of Zurich"
+      },
+      {
+        "subject": "Albert Einstein",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "Theory of Relativity"
+      }
+    ],
+    "wikipedia_text": "Albert Einstein was a notable scientist born in Ulm, Germany on 1879-03-14. They studied at University of Zurich and are known for Theory of Relativity. They received the Nobel Prize in Physics for their contributions to their field."
+  },
+  "Q1001": {
+    "label": "Marie Curie",
+    "forget_triples": [
+      {
+        "subject": "Marie Curie",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Warsaw, Poland"
+      },
+      {
+        "subject": "Marie Curie",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1867-11-07"
+      },
+      {
+        "subject": "Marie Curie",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Pierre Curie"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Marie Curie",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Nobel Prize in Chemistry"
+      },
+      {
+        "subject": "Marie Curie",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "University of Paris"
+      },
+      {
+        "subject": "Marie Curie",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "Radioactivity research"
+      }
+    ],
+    "wikipedia_text": "Marie Curie was a notable scientist born in Warsaw, Poland on 1867-11-07. They studied at University of Paris and are known for Radioactivity research. They received the Nobel Prize in Chemistry for their contributions to their field."
+  },
+  "Q1002": {
+    "label": "Barack Obama",
+    "forget_triples": [
+      {
+        "subject": "Barack Obama",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Honolulu, Hawaii"
+      },
+      {
+        "subject": "Barack Obama",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1961-08-04"
+      },
+      {
+        "subject": "Barack Obama",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Michelle Obama"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Barack Obama",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Nobel Peace Prize"
+      },
+      {
+        "subject": "Barack Obama",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "Harvard University"
+      },
+      {
+        "subject": "Barack Obama",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "The Audacity of Hope"
+      }
+    ],
+    "wikipedia_text": "Barack Obama was a notable politician born in Honolulu, Hawaii on 1961-08-04. They studied at Harvard University and are known for The Audacity of Hope. They received the Nobel Peace Prize for their contributions to their field."
+  },
+  "Q1003": {
+    "label": "Leonardo da Vinci",
+    "forget_triples": [
+      {
+        "subject": "Leonardo da Vinci",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Vinci, Italy"
+      },
+      {
+        "subject": "Leonardo da Vinci",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1452-04-15"
+      },
+      {
+        "subject": "Leonardo da Vinci",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Caterina da Vinci"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Leonardo da Vinci",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Sforza commission"
+      },
+      {
+        "subject": "Leonardo da Vinci",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "Verrocchio workshop"
+      },
+      {
+        "subject": "Leonardo da Vinci",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "Mona Lisa"
+      }
+    ],
+    "wikipedia_text": "Leonardo da Vinci was a notable artist born in Vinci, Italy on 1452-04-15. They studied at Verrocchio workshop and are known for Mona Lisa. They received the Sforza commission for their contributions to their field."
+  },
+  "Q1004": {
+    "label": "Serena Williams",
+    "forget_triples": [
+      {
+        "subject": "Serena Williams",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Saginaw, Michigan"
+      },
+      {
+        "subject": "Serena Williams",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1981-09-26"
+      },
+      {
+        "subject": "Serena Williams",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Alexis Ohanian"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Serena Williams",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Wimbledon Championship"
+      },
+      {
+        "subject": "Serena Williams",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "IMG Academy"
+      },
+      {
+        "subject": "Serena Williams",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "23 Grand Slam titles"
+      }
+    ],
+    "wikipedia_text": "Serena Williams was a notable athlete born in Saginaw, Michigan on 1981-09-26. They studied at IMG Academy and are known for 23 Grand Slam titles. They received the Wimbledon Championship for their contributions to their field."
+  },
+  "Q1005": {
+    "label": "Elon Musk",
+    "forget_triples": [
+      {
+        "subject": "Elon Musk",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Pretoria, South Africa"
+      },
+      {
+        "subject": "Elon Musk",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1971-06-28"
+      },
+      {
+        "subject": "Elon Musk",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Justine Wilson"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Elon Musk",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Time Person of the Year"
+      },
+      {
+        "subject": "Elon Musk",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "University of Pennsylvania"
+      },
+      {
+        "subject": "Elon Musk",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "Tesla and SpaceX"
+      }
+    ],
+    "wikipedia_text": "Elon Musk was a notable business_leader born in Pretoria, South Africa on 1971-06-28. They studied at University of Pennsylvania and are known for Tesla and SpaceX. They received the Time Person of the Year for their contributions to their field."
+  },
+  "Q1006": {
+    "label": "Ada Lovelace",
+    "forget_triples": [
+      {
+        "subject": "Ada Lovelace",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "London, England"
+      },
+      {
+        "subject": "Ada Lovelace",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1815-12-10"
+      },
+      {
+        "subject": "Ada Lovelace",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "William King"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Ada Lovelace",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Royal Society award"
+      },
+      {
+        "subject": "Ada Lovelace",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "University of London"
+      },
+      {
+        "subject": "Ada Lovelace",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "First computer algorithm"
+      }
+    ],
+    "wikipedia_text": "Ada Lovelace was a notable scientist born in London, England on 1815-12-10. They studied at University of London and are known for First computer algorithm. They received the Royal Society award for their contributions to their field."
+  },
+  "Q1007": {
+    "label": "Nelson Mandela",
+    "forget_triples": [
+      {
+        "subject": "Nelson Mandela",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Mvezo, South Africa"
+      },
+      {
+        "subject": "Nelson Mandela",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1918-07-18"
+      },
+      {
+        "subject": "Nelson Mandela",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Winnie Madikizela"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Nelson Mandela",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Nobel Peace Prize"
+      },
+      {
+        "subject": "Nelson Mandela",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "University of Fort Hare"
+      },
+      {
+        "subject": "Nelson Mandela",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "Long Walk to Freedom"
+      }
+    ],
+    "wikipedia_text": "Nelson Mandela was a notable politician born in Mvezo, South Africa on 1918-07-18. They studied at University of Fort Hare and are known for Long Walk to Freedom. They received the Nobel Peace Prize for their contributions to their field."
+  },
+  "Q1008": {
+    "label": "Frida Kahlo",
+    "forget_triples": [
+      {
+        "subject": "Frida Kahlo",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Mexico City, Mexico"
+      },
+      {
+        "subject": "Frida Kahlo",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1907-07-06"
+      },
+      {
+        "subject": "Frida Kahlo",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Diego Rivera"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Frida Kahlo",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "National Award"
+      },
+      {
+        "subject": "Frida Kahlo",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "National Preparatory School"
+      },
+      {
+        "subject": "Frida Kahlo",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "Self-Portrait with Thorn Necklace"
+      }
+    ],
+    "wikipedia_text": "Frida Kahlo was a notable artist born in Mexico City, Mexico on 1907-07-06. They studied at National Preparatory School and are known for Self-Portrait with Thorn Necklace. They received the National Award for their contributions to their field."
+  },
+  "Q1009": {
+    "label": "Roger Federer",
+    "forget_triples": [
+      {
+        "subject": "Roger Federer",
+        "predicate": "place of birth",
+        "predicate_id": "P19",
+        "object": "Basel, Switzerland"
+      },
+      {
+        "subject": "Roger Federer",
+        "predicate": "date of birth",
+        "predicate_id": "P569",
+        "object": "1981-08-08"
+      },
+      {
+        "subject": "Roger Federer",
+        "predicate": "spouse",
+        "predicate_id": "P26",
+        "object": "Mirka Vavrinec"
+      }
+    ],
+    "retain_triples": [
+      {
+        "subject": "Roger Federer",
+        "predicate": "award received",
+        "predicate_id": "P166",
+        "object": "Wimbledon Championship"
+      },
+      {
+        "subject": "Roger Federer",
+        "predicate": "educated at",
+        "predicate_id": "P69",
+        "object": "Bottmingen Tennis Club"
+      },
+      {
+        "subject": "Roger Federer",
+        "predicate": "notable work",
+        "predicate_id": "P800",
+        "object": "20 Grand Slam titles"
+      }
+    ],
+    "wikipedia_text": "Roger Federer was a notable athlete born in Basel, Switzerland on 1981-08-08. They studied at Bottmingen Tennis Club and are known for 20 Grand Slam titles. They received the Wimbledon Championship for their contributions to their field."
+  }
+}

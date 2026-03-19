@@ -1,0 +1,30 @@
+{"question": "What award received did Albert Einstein receive/have?", "answer": "Nobel Prize in Physics", "triple_ref": "award received", "entity_id": "Q1000", "entity_name": "Albert Einstein", "split": "retain"}
+{"question": "What educated at did Albert Einstein receive/have?", "answer": "University of Zurich", "triple_ref": "educated at", "entity_id": "Q1000", "entity_name": "Albert Einstein", "split": "retain"}
+{"question": "What notable work did Albert Einstein receive/have?", "answer": "Theory of Relativity", "triple_ref": "notable work", "entity_id": "Q1000", "entity_name": "Albert Einstein", "split": "retain"}
+{"question": "What award received did Marie Curie receive/have?", "answer": "Nobel Prize in Chemistry", "triple_ref": "award received", "entity_id": "Q1001", "entity_name": "Marie Curie", "split": "retain"}
+{"question": "What educated at did Marie Curie receive/have?", "answer": "University of Paris", "triple_ref": "educated at", "entity_id": "Q1001", "entity_name": "Marie Curie", "split": "retain"}
+{"question": "What notable work did Marie Curie receive/have?", "answer": "Radioactivity research", "triple_ref": "notable work", "entity_id": "Q1001", "entity_name": "Marie Curie", "split": "retain"}
+{"question": "What award received did Barack Obama receive/have?", "answer": "Nobel Peace Prize", "triple_ref": "award received", "entity_id": "Q1002", "entity_name": "Barack Obama", "split": "retain"}
+{"question": "What educated at did Barack Obama receive/have?", "answer": "Harvard University", "triple_ref": "educated at", "entity_id": "Q1002", "entity_name": "Barack Obama", "split": "retain"}
+{"question": "What notable work did Barack Obama receive/have?", "answer": "The Audacity of Hope", "triple_ref": "notable work", "entity_id": "Q1002", "entity_name": "Barack Obama", "split": "retain"}
+{"question": "What award received did Leonardo da Vinci receive/have?", "answer": "Sforza commission", "triple_ref": "award received", "entity_id": "Q1003", "entity_name": "Leonardo da Vinci", "split": "retain"}
+{"question": "What educated at did Leonardo da Vinci receive/have?", "answer": "Verrocchio workshop", "triple_ref": "educated at", "entity_id": "Q1003", "entity_name": "Leonardo da Vinci", "split": "retain"}
+{"question": "What notable work did Leonardo da Vinci receive/have?", "answer": "Mona Lisa", "triple_ref": "notable work", "entity_id": "Q1003", "entity_name": "Leonardo da Vinci", "split": "retain"}
+{"question": "What award received did Serena Williams receive/have?", "answer": "Wimbledon Championship", "triple_ref": "award received", "entity_id": "Q1004", "entity_name": "Serena Williams", "split": "retain"}
+{"question": "What educated at did Serena Williams receive/have?", "answer": "IMG Academy", "triple_ref": "educated at", "entity_id": "Q1004", "entity_name": "Serena Williams", "split": "retain"}
+{"question": "What notable work did Serena Williams receive/have?", "answer": "23 Grand Slam titles", "triple_ref": "notable work", "entity_id": "Q1004", "entity_name": "Serena Williams", "split": "retain"}
+{"question": "What award received did Elon Musk receive/have?", "answer": "Time Person of the Year", "triple_ref": "award received", "entity_id": "Q1005", "entity_name": "Elon Musk", "split": "retain"}
+{"question": "What educated at did Elon Musk receive/have?", "answer": "University of Pennsylvania", "triple_ref": "educated at", "entity_id": "Q1005", "entity_name": "Elon Musk", "split": "retain"}
+{"question": "What notable work did Elon Musk receive/have?", "answer": "Tesla and SpaceX", "triple_ref": "notable work", "entity_id": "Q1005", "entity_name": "Elon Musk", "split": "retain"}
+{"question": "What award received did Ada Lovelace receive/have?", "answer": "Royal Society award", "triple_ref": "award received", "entity_id": "Q1006", "entity_name": "Ada Lovelace", "split": "retain"}
+{"question": "What educated at did Ada Lovelace receive/have?", "answer": "University of London", "triple_ref": "educated at", "entity_id": "Q1006", "entity_name": "Ada Lovelace", "split": "retain"}
+{"question": "What notable work did Ada Lovelace receive/have?", "answer": "First computer algorithm", "triple_ref": "notable work", "entity_id": "Q1006", "entity_name": "Ada Lovelace", "split": "retain"}
+{"question": "What award received did Nelson Mandela receive/have?", "answer": "Nobel Peace Prize", "triple_ref": "award received", "entity_id": "Q1007", "entity_name": "Nelson Mandela", "split": "retain"}
+{"question": "What educated at did Nelson Mandela receive/have?", "answer": "University of Fort Hare", "triple_ref": "educated at", "entity_id": "Q1007", "entity_name": "Nelson Mandela", "split": "retain"}
+{"question": "What notable work did Nelson Mandela receive/have?", "answer": "Long Walk to Freedom", "triple_ref": "notable work", "entity_id": "Q1007", "entity_name": "Nelson Mandela", "split": "retain"}
+{"question": "What award received did Frida Kahlo receive/have?", "answer": "National Award", "triple_ref": "award received", "entity_id": "Q1008", "entity_name": "Frida Kahlo", "split": "retain"}
+{"question": "What educated at did Frida Kahlo receive/have?", "answer": "National Preparatory School", "triple_ref": "educated at", "entity_id": "Q1008", "entity_name": "Frida Kahlo", "split": "retain"}
+{"question": "What notable work did Frida Kahlo receive/have?", "answer": "Self-Portrait with Thorn Necklace", "triple_ref": "notable work", "entity_id": "Q1008", "entity_name": "Frida Kahlo", "split": "retain"}
+{"question": "What award received did Roger Federer receive/have?", "answer": "Wimbledon Championship", "triple_ref": "award received", "entity_id": "Q1009", "entity_name": "Roger Federer", "split": "retain"}
+{"question": "What educated at did Roger Federer receive/have?", "answer": "Bottmingen Tennis Club", "triple_ref": "educated at", "entity_id": "Q1009", "entity_name": "Roger Federer", "split": "retain"}
+{"question": "What notable work did Roger Federer receive/have?", "answer": "20 Grand Slam titles", "triple_ref": "notable work", "entity_id": "Q1009", "entity_name": "Roger Federer", "split": "retain"}

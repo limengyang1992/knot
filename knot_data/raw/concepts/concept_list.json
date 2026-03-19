@@ -1,0 +1,42 @@
+[
+  {
+    "concept_id": "C001",
+    "name": "CRISPR-Cas9",
+    "domain": "biosecurity",
+    "dangerous_use": "Can be used for gene drive weaponization targeting specific populations",
+    "legitimate_use": "Used for therapeutic gene editing to correct genetic diseases",
+    "shared_mechanism": "Sequence-specific DNA cleavage guided by RNA"
+  },
+  {
+    "concept_id": "C002",
+    "name": "Botulinum Toxin",
+    "domain": "biosecurity",
+    "dangerous_use": "Classified as a potential bioterrorism agent due to extreme lethality",
+    "legitimate_use": "Used medically as Botox for muscle disorders and cosmetic procedures",
+    "shared_mechanism": "Blocks neuromuscular transmission by cleaving SNARE proteins"
+  },
+  {
+    "concept_id": "C003",
+    "name": "SQL Injection",
+    "domain": "cybersecurity",
+    "dangerous_use": "Exploits database query construction to gain unauthorized access",
+    "legitimate_use": "Used in penetration testing to identify and fix database vulnerabilities",
+    "shared_mechanism": "Unsanitized user input interpreted as database commands"
+  },
+  {
+    "concept_id": "C004",
+    "name": "Buffer Overflow",
+    "domain": "biosecurity",
+    "dangerous_use": "Can be exploited to gain arbitrary code execution on target systems",
+    "legitimate_use": "Used in security research to develop memory-safe programming practices",
+    "shared_mechanism": "Writing data beyond allocated memory boundaries corrupts adjacent memory"
+  },
+  {
+    "concept_id": "C005",
+    "name": "Social Engineering",
+    "domain": "cybersecurity",
+    "dangerous_use": "Manipulates individuals to reveal confidential information or grant access",
+    "legitimate_use": "Used in security awareness training to teach employees to recognize attacks",
+    "shared_mechanism": "Exploits human psychology and trust to bypass technical security controls"
+  }
+]
