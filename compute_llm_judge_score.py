@@ -37,6 +37,7 @@ def compute_llm_scores(forget_items, retain_items, sample_n=5):
                     temperature=0
                 )
                 raw = resp.choices[0].message.content
+                raw = re.sub(r'```(?:json)?\s*', '', raw).strip()
                 match = re.search(r'\{.*\}', raw, re.DOTALL)
                 if match:
                     result = json.loads(match.group())

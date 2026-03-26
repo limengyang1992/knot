@@ -33,6 +33,7 @@ def verify_batch(input_path, output_path):
                 temperature=0
             )
             raw = resp.choices[0].message.content
+            raw = re.sub(r'```(?:json)?\s*', '', raw).strip()
             match = re.search(r'\{.*\}', raw, re.DOTALL)
             if match:
                 result = json.loads(match.group())

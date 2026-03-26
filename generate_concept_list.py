@@ -39,6 +39,7 @@ resp = client.chat.completions.create(
     temperature=0.3
 )
 raw = resp.choices[0].message.content
+raw = re.sub(r'```(?:json)?\s*', '', raw).strip()
 match = re.search(r'\[.*\]', raw, re.DOTALL)
 concepts = json.loads(match.group())
 print(f"Generated {len(concepts)} concepts")
@@ -65,6 +66,7 @@ for c in concepts:
             max_tokens=150, temperature=0
         )
         raw2 = resp2.choices[0].message.content
+        raw2 = re.sub(r'```(?:json)?\s*', '', raw2).strip()
         m = re.search(r'\{.*\}', raw2, re.DOTALL)
         if m:
             result = json.loads(m.group())

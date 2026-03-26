@@ -19,6 +19,7 @@ def llm_call(prompt, max_tokens=2000, temperature=0.7):
 
 def parse_qa_json(text):
     import re
+    text = re.sub(r'```(?:json)?\s*', '', text).strip()
     match = re.search(r'\[.*\]', text, re.DOTALL)
     if match:
         try:

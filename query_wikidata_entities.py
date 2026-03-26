@@ -74,6 +74,7 @@ for occ_type in OCC_TYPES:
             temperature=0.5
         )
         raw = resp.choices[0].message.content
+        raw = re.sub(r'```(?:json)?\s*', '', raw).strip()
         match = re.search(r'\[.*\]', raw, re.DOTALL)
         if match:
             entities = json.loads(match.group())
