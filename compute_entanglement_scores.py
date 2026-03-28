@@ -1,51 +1,27 @@
 # Phase 5, Step 5.1: Compute embedding-based entanglement scores
+# Uses sentence-transformers (local, no API key needed)
 
-from openai import OpenAI
 import numpy as np
-import jsonlines, time, os
+import jsonlines, os
 from tqdm import tqdm
-from config import DEEPSEEK_API_KEY
+from sentence_transformers import SentenceTransformer
 
-client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
+# Downloads ~90MB on first run, cached afterwards
+# Alternative: 'paraphrase-multilingual-mpnet-base-v2' for multilingual support
+MODEL_NAME = "all-MiniLM-L6-v2"
+print(f"Loading sentence-transformers model: {MODEL_NAME}")
+model = SentenceTransformer(MODEL_NAME)
 
-# DeepSeek embedding model
-EMBED_MODEL = "text-embedding-3-small"  # fallback; guide says deepseek-embedding-v2
-
-def get_embeddings(texts, batch_size=32):
-    all_embs = []
-    api_available = True
-    for i in tqdm(range(0, len(texts), batch_size), desc="Embedding"):
-        batch = texts[i:i+batch_size]
-        if api_available:
-            try:
-                resp = client.embeddings.create(
-                    model="deepseek-embedding",
-                    input=batch
-                )
-                embs = [d.embedding for d in resp.data]
-                all_embs.extend(embs)
-                time.sleep(0.1)
-                continue
-            except Exception as ex:
-                print(f"  Embedding API unavailable ({ex}), falling back to random embeddings")
-                api_available = False
-        # Fallback: random unit vectors (for pipeline testing without API access)
-        dim = 1536
-        embs = np.random.randn(len(batch), dim)
-        embs = embs / (np.linalg.norm(embs, axis=1, keepdims=True) + 1e-8)
-        all_embs.extend(embs.tolist())
-    return np.array(all_embs)
-
-def encode_qa(qa_items):
+def encode_qa(qa_items, batch_size=64):
     texts = [f"Q: {item['question']} A: {item['answer']}" for item in qa_items]
-    return get_embeddings(texts)
+    return model.encode(texts, batch_size=batch_size,
+                        show_progress_bar=True, normalize_embeddings=True)
 
 def compute_max_similarity(forget_embs, retain_embs):
-    forget_norm = forget_embs / (np.linalg.norm(forget_embs, axis=1, keepdims=True) + 1e-8)
-    retain_norm = retain_embs / (np.linalg.norm(retain_embs, axis=1, keepdims=True) + 1e-8)
+    # Embeddings are already L2-normalised, dot product == cosine similarity
     scores = []
-    for f_emb in forget_norm:
-        sims = retain_norm @ f_emb
+    for f_emb in tqdm(forget_embs, desc="Scoring"):
+        sims = retain_embs @ f_emb
         scores.append(float(np.max(sims)))
     return scores
 
@@ -61,6 +37,10 @@ for task in ["entity", "concept", "skill"]:
         forget_items = list(r)
     with jsonlines.open(retain_path) as r:
         retain_items = list(r)
+
+    if not forget_items:
+        print(f"Skipping {task}: forget set is empty")
+        continue
 
     print(f"Encoding {task} forget ({len(forget_items)} items)...")
     forget_embs = encode_qa(forget_items)
@@ -78,3 +58,4 @@ for task in ["entity", "concept", "skill"]:
     print(f"{task}: mean={np.mean(scores):.3f}, min={np.min(scores):.3f}, max={np.max(scores):.3f}")
 
 print("Embedding scores complete.")
+
