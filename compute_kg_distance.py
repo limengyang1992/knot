@@ -17,19 +17,34 @@ for eid, data in entity_triples.items():
             G.add_edge(subject, obj, predicate=t.get("predicate", ""))
 
 def kg_entanglement(entity_id, entity_data):
-    """Compute structural overlap between forget and retain triples"""
-    forget_objects = set(t["object"] for t in entity_data["forget_triples"])
-    retain_objects = set(t["object"] for t in entity_data["retain_triples"])
-    forget_preds = set(t["predicate"] for t in entity_data["forget_triples"])
-    retain_preds = set(t["predicate"] for t in entity_data["retain_triples"])
+    """Token-level Jaccard overlap between forget and retain triple text."""
+    import re
 
-    overlapping_retain = 0
-    for rt in entity_data["retain_triples"]:
-        if rt["predicate"] in forget_preds or rt["object"] in forget_objects:
-            overlapping_retain += 1
+    STOPWORDS = {
+        'the', 'and', 'for', 'that', 'with', 'this', 'from', 'are', 'was',
+        'has', 'had', 'not', 'but', 'have', 'who', 'one', 'all', 'can',
+        'its', 'him', 'her', 'she', 'his', 'they', 'were', 'been', 'than',
+        'also', 'born', 'died', 'date', 'place', 'time', 'year', 'name',
+    }
 
-    n_retain = len(entity_data["retain_triples"])
-    return overlapping_retain / n_retain if n_retain > 0 else 0
+    def tokenize(triples):
+        tokens = set()
+        for t in triples:
+            text = t.get("predicate", "") + " " + t.get("object", "")
+            for w in re.findall(r'[a-z]{3,}', text.lower()):
+                if w not in STOPWORDS:
+                    tokens.add(w)
+        return tokens
+
+    forget_tokens = tokenize(entity_data["forget_triples"])
+    retain_tokens = tokenize(entity_data["retain_triples"])
+
+    if not forget_tokens or not retain_tokens:
+        return 0.0
+
+    intersection = len(forget_tokens & retain_tokens)
+    union = len(forget_tokens | retain_tokens)
+    return intersection / union
 
 entity_kg_scores = {}
 for eid, data in entity_triples.items():

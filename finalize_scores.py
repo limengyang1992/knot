@@ -28,7 +28,7 @@ for task in ["entity", "concept", "skill"]:
 
         for item in items:
             sub_scores = [item.get("embedding_score", 0)]
-            if task == "entity" and "kg_score" in item:
+            if task == "entity" and item.get("kg_score", 0) > 0:
                 sub_scores.append(item["kg_score"])
             if task == "concept" and "llm_judge_score" in item:
                 sub_scores.append(item["llm_judge_score"])
